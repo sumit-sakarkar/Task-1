@@ -1,0 +1,342 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+.container { 
+  height: 50px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+# body{
+ min height : 400px;
+ margin=top: 10%;
+ }
+
+	
+
+* {
+  box-sizing: border-box;
+}
+#rcorners1 {
+
+ 
+  margin: 15px auto auto auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 100 %;
+  height: 30px; 
+}
+
+#inp {
+
+ 
+  margin: auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 40%;
+  height: 50px; 
+}
+
+#inp2 {
+
+ 
+  margin: auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 60%;
+  height: 50px; 
+}
+
+#inp3 {
+
+ 
+  margin: auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 150%;
+  height: 50px; 
+}
+#inp4 {
+
+ 
+  margin: auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 20%;
+  height: 50px; 
+}
+
+#inp5 {
+
+ 
+  margin: auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 60%;
+  height: 150px; 
+}
+
+#rcorners2 {
+  margin: 15px auto auto auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 100%;
+  height: 30px; 
+}
+
+#circle {
+  background-color:MidnightBlue;
+  margin: 15px auto auto auto;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+max-width: 100%;
+max-height: 100%;
+}
+
+.column1 {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  height: 80px;
+}
+
+
+.column2 {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  height: 80px;
+}
+
+.column3 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 80px;
+}
+
+.column4 {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  height: 80px;
+}
+
+
+
+.column1inp {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 80px;
+}
+
+
+.column2inp {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 80px;
+}
+
+.column3inp {
+  float: left;
+  width: 29%;
+  padding: 10px;
+  height: 80px;
+}
+
+.column4inp {
+  float: left;
+  width: 71%;
+  padding: 10px;
+  height: 80px;
+}
+
+.column5inp {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 80px;
+}
+
+.column6inp {
+  float: left;
+  width: 55%;
+  padding: 10px;
+  height: 80px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body style="background-color:white;" >
+<script src="index.js"> </script>
+
+
+<div class="row">
+  <div class="column1" style="background-color:WhiteSmoke;">
+    <p id="circle"></p>
+  </div>
+  <div class="column2" style="background-color:WhiteSmoke;">
+    <div id="rcorners1" style="text-align:center; color:Midnightblue; font-size:20px; padding:5px;" > Logo </div>
+  </div>
+  <div class="column3" style="background-color:WhiteSmoke;">
+  </div>
+  <div class="column4" style="background-color:WhiteSmoke;">
+     <div id="rcorners2" style="text-align:center;color:Midnightblue; font-size:20px; padding:5px;"> Categories </div>
+  </div>
+  <div class="column4" style="background-color:WhiteSmoke;">
+     <div id="rcorners2" style="text-align:center;color:Midnightblue; font-size:20px; padding:5px;"> Intersted</div>
+  </div>
+  <div class="column4" style="background-color:WhiteSmoke;">
+     <div id="rcorners2" style="text-align:center;color:Midnightblue; font-size:20px; padding:5px;"> Appointments</div>
+  </div>
+</div>
+
+<div style = " float : right; padding : 30px; margin-right: 4%" >
+
+<i class='fas fa-map-marker-alt' style='font-size:48px;color:green'></i>
+<div style='display:inline-block; font-size:48px;color:MidnightBlue;'>  Location</div>
+</div>
+
+<b style= "display:block;margin-top: 150px;;font-size:48px;text-align:center;color:MidnightBlue; "> Registration </b> 
+  <!-- 
+  margin-top: 10 px; -->
+
+
+<form>
+<div class="row">
+  <div class="column1inp" style="background-color:White;">
+    <input style = " float:right;" type="text" id="inp" name="fname">
+  </div>
+  <div class="column2inp" style="background-color:White;">
+    <input  type="text" id="inp" name="fname">
+  </div>
+</div>
+<div class="row">
+  <div class="column3inp" style="background-color:White;">
+    <label style = " float:right;" for="lname"><b style= "vertical-align:middle;font-size:30px;text-align:center;color:MidnightBlue; ">Mobile</b></label>
+  </div>
+  <div class="column4inp" style="background-color:White;">
+    <input type="text" id="inp2" name="fname">
+  </div>
+</div>
+<div class="row">
+
+<div class="container">
+  <div class="center">
+  <button id = "inp3"><b style= "font-size:30px;text-align:center;color:MidnightBlue; ">Send OTP</b></button>
+</div>
+</div>
+
+<div class="row">
+  <div class="column5inp" style="background-color:White;">
+    <label style = " float:right;" for="lname"><b style= "vertical-align:middle;font-size:30px;text-align:center;color:MidnightBlue; ">OTP</b></label>
+  </div>
+  <div class="column6inp" style="background-color:White;">
+    <input  type="text" id="inp4" name="fname">
+  </div>
+</div>
+
+<div class="row">
+
+<div class="container">
+  <div class="center">
+  <button id = "inp3"style= "background-color:MidnightBlue;" ><b style= "font-size:30px;text-align:center;color:white; ">Verify</b></button>
+</div>
+</div>
+
+<div class="row">
+  <div class="column3inp" style="background-color:White;">
+    <label style = " float:right;" for="lname"><b style= "vertical-align:middle;font-size:30px;text-align:center;color:MidnightBlue; ">Email-id</b></label>
+  </div>
+  <div class="column4inp" style="background-color:White;">
+    <input type="text" id="inp2" name="fname">
+  </div>
+
+</div>
+<div class="row">
+
+<div class="container">
+  <div class="center">
+  <button id = "inp3"><b style= "font-size:30px;text-align:center;color:MidnightBlue; ">Send OTP</b></button>
+</div>
+</div>
+
+<div class="row">
+  <div class="column5inp" style="background-color:White;">
+    <label style = " float:right;" for="lname"><b style= "vertical-align:middle;font-size:30px;text-align:center;color:MidnightBlue; ">OTP</b></label>
+  </div>
+  <div class="column6inp" style="background-color:White;">
+    <input  type="text" id="inp4" name="fname">
+  </div>
+</div>
+
+<div class="row">
+
+<div class="container">
+  <div class="center">
+  <button id = "inp3"style= "background-color:MidnightBlue;" ><b style= "font-size:30px;text-align:center;color:white; ">Verify</b></button>
+</div>
+</div>
+
+<div class="row">
+  <div class="column3inp" style="background-color:White;">
+    <label style = " float:right;" for="lname"><b style= "vertical-align:middle;font-size:30px;text-align:center;color:MidnightBlue; ">Address</b></label>
+  </div>
+  <div class="column4inp" style="background-color:White;">
+    <input type="text" id="inp5" name="fname">
+  </div>
+<br><br><br><br><br><br>
+<br><br><br><br>
+
+<div class="row">
+  <div class="column3inp" style="background-color:White;">
+    <label style = " float:right;" for="lname"><b style= "vertical-align:middle;font-size:30px;text-align:center;color:MidnightBlue; ">Pincode</b></label>
+  </div>
+  <div class="column4inp" style="background-color:White;">
+    <input type="text" id="inp4" name="fname">
+  </div>
+
+
+</div>
+
+<div class="row">
+
+<div class="container">
+  <div class="center">
+  <button id = "inp3"style= "background-color:MidnightBlue;" ><b style= "font-size:30px;text-align:center;color:white; ">Register</b></button>
+</div>
+</div>
+
+
+</form>
+</body>
+</html>
+
