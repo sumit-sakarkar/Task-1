@@ -4,6 +4,46 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
+div.scrollmenu {
+  background-color: Whitesmoke;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: MidnightBlue;
+  text-align: center;
+  padding: 7px;
+vertical-align:middle;
+  text-decoration: none;
+
+ margin: 15px auto auto auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 15%;
+  height: 40px; 
+}
+
+div.scrollmenu a:hover {
+  background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container_top { 
+  height: 100px;
+  position: relative;
+}
+
 
 
 .container { 
@@ -41,6 +81,24 @@
   width: 100 %;
   height: 30px; 
 }
+
+#rcorners2 {
+  margin: 15px auto auto auto;
+  border-radius: 30px;
+  background: Lavender;
+  width: 100%;
+  height: 30px; 
+}
+
+#circle {
+  background-color:MidnightBlue;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+max-width: 100%;
+max-height: 100%;
+}
+
 
 #inp {
 
@@ -91,23 +149,8 @@
   height: 150px; 
 }
 
-#rcorners2 {
-  margin: 15px auto auto auto;
-  border-radius: 30px;
-  background: Lavender;
-  width: 100%;
-  height: 30px; 
-}
 
-#circle {
-  background-color:MidnightBlue;
-  margin: 15px auto auto auto;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-max-width: 100%;
-max-height: 100%;
-}
+
 
 .column1 {
   float: left;
@@ -198,27 +241,15 @@ max-height: 100%;
 <body style="background-color:white;" >
 <script src="index.js"> </script>
 
-
-<div class="row">
-  <div class="column1" style="background-color:WhiteSmoke;">
-    <p id="circle"></p>
-  </div>
-  <div class="column2" style="background-color:WhiteSmoke;">
-    <div id="rcorners1" style="text-align:center; color:Midnightblue; font-size:20px; padding:5px;" > Logo </div>
-  </div>
-  <div class="column3" style="background-color:WhiteSmoke;">
-  </div>
-  <div class="column4" style="background-color:WhiteSmoke;">
-     <div id="rcorners2" style="text-align:center;color:Midnightblue; font-size:20px; padding:5px;"> Categories </div>
-  </div>
-  <div class="column4" style="background-color:WhiteSmoke;">
-     <div id="rcorners2" style="text-align:center;color:Midnightblue; font-size:20px; padding:5px;"> Intersted</div>
-  </div>
-  <div class="column4" style="background-color:WhiteSmoke;">
-     <div id="rcorners2" style="text-align:center;color:Midnightblue; font-size:20px; padding:5px;"> Appointments</div>
-  </div>
+<div class="container_top" style = "background-color:WhiteSmoke;">
+	<div class="scrollmenu">
+	  <img src = "" alt = "Logo">
+  	  <a href="#contact" style = "font-size:20px;">Logo</a>
+	  <a href="#contact" style = "font-size:20px;float:right;">Appointments</a>
+	  <a href="#about" style = "font-size:20px;float:right;">Interested</a>
+	  <a href="#about" style = "font-size:20px;float:right;">Categories</a>
+	</div>
 </div>
-
 <div style = " float : right; padding : 30px; margin-right: 4%" >
 
 <i class='fas fa-map-marker-alt' style='font-size:48px;color:green'></i>
